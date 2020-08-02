@@ -1,0 +1,19 @@
+{
+  "name": "guiahotel",
+  "version": "1.0.0",
+  "description": "Proyecto de Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamythariza/FullStack_Coursera.git"
+  },
+  "author": "Jamyth Ariza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamythariza/FullStack_Coursera/issues"
+  },
+  "homepage": "https://github.com/jamythariza/FullStack_Coursera#readme"
+}
