@@ -4,6 +4,7 @@
 }
 .btn-reserva{
     width: 100%;
+    border-radius: 0px;
 }
 footer{
     background-color: yellow;
@@ -12,7 +13,7 @@ footer{
     margin-top: 10px;
 }
 .card-hotel{
-    flex: 1 150px;
-    padding: 2px 4px;
+    flex: 1 200px;
+    padding: 2px 0px;
     margin-top: 10px;
 }
