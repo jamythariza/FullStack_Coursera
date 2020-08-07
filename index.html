@@ -78,7 +78,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Hotel Barcelona</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con clases de tango gratis">Hotel Barcelona</h5>
           <h6 class="card-subtitle text-muted">España</h6>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
@@ -87,7 +87,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Rio Janeiro</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con desayuno">Rio Janeiro</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
@@ -96,7 +96,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Hotel Mega Plaza</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con almuerzo">Hotel Mega Plaza</h5>
           <h6 class="card-subtitle text-muted">Colombia</h6>
           <p class="card-text">Lorem ipsum dolor </p>
         </div>
@@ -105,7 +105,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Hotel Quito</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con cena">Hotel Quito</h5>
           <h6 class="card-subtitle text-muted">Ecuador</h6>
           <p class="card-text">Lorem ipsum dolor sit </p>
         </div>
@@ -114,7 +114,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Hotel Madrid</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con almuerzo">Hotel Madrid</h5>
           <h6 class="card-subtitle text-muted">España</h6>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
@@ -123,7 +123,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Hotel San Pablo</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con almuerzo">Hotel San Pablo</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
         </div>
@@ -132,12 +132,44 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img src="./img/image1.jpg" alt="san andres" class="card-img-top">
         <div class="card-body">
-          <h4>Hotel Buenos Aires</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+          <h5 data-toggle="tooltip" data-placement="top" title="Las primeras reseravas cuentan con desayuno">Hotel Buenos Aires</h5>
+          <h6 class="card-subtitle text-muted">Argentina</h6>
+          <p class="card-text">Hotel ubicado en pleno centro.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+            Contacto
+          </button>
         </div>
-        <div> <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reservar</button></div>
+        <div> <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes." ><span class="oi oi-plus"></span> Reservar</button></div>
       </div>
     </div>
+<!-- Modal Contacto-->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Tu email: </label>
+            <input type="text" class="form-control" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensaje: </label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <footer>
     <div class="row">
@@ -166,6 +198,15 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+
 </body>
+</html>
