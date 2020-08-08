@@ -1,11 +1,10 @@
-$yellow: #fffa19;
+$color:#fffa19;
 @mixin margenes ($top, $bottom){
     margin-top: $top;
     margin-bottom: $bottom;
 }
-
 .jumbotron{
-    background-color: $yellow;
+    background-color: $color;
     color: black;
 }
 .btn-reserva{
@@ -13,7 +12,7 @@ $yellow: #fffa19;
     border-radius: 0px;
 }
 footer{
-    background-color: $yellow;
+    background-color: $color;
     padding: 10px 10px 0 10px;
     @include margenes(10px,0px );
 }
