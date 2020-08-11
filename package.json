@@ -8,7 +8,7 @@
     "start": "concurrently \"npm run watch:scss\" \"npm run dev \"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss ",
     "clean": "rimraf dist",
     "imagemin": "imagemin img/* --out-dir dist/images",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
@@ -26,7 +26,11 @@
   "homepage": "https://github.com/jamythariza/FullStack_Coursera#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt": "^1.2.1",
+    "grunt-contrib-sass": "^1.0.0",
     "htmlmin": "0.0.7",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^6.0.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
@@ -38,8 +42,19 @@
     "bootstrap": "^4.5.0",
     "concurrently": "^5.3.0",
     "copyfiles": "^2.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "jit-grunt": "^0.10.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "time-grunt": "^2.0.0"
   }
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <!-- endbuild -->
 
-  <title>Hello, world!</title>
+  <title>Full stack</title>
 </head>
 
 <body>
@@ -256,28 +256,11 @@
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- build:js dist/index.js-->
+  <!-- build:js dist/main.js-->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('[data-toggle="popover"]').popover();
-      $('.carousel').carousel({
-        interval: 2000
-      });
-      $('#contacto').on('show.bs.modal', function (e) {
-        $('#btncontacto').removeClass('btn-outline-success');
-        $('#btncontacto').addClass('btn-primary');
-        $('#btncontacto').prop('disabled', true);
-      });
-      $('#contacto').on('hidden.bs.modal', function (e) {
-        $('#btncontacto').prop('disabled', false);
-      });
-    });
-  </script>
+  <script src="./js/main.js"></script>
 <!-- endbuild -->
 </body>
 

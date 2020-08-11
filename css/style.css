@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: #fffa19;
+  background-color: #ddd;
   color: black; }
 
 .btn-reserva {
@@ -7,7 +7,7 @@
   border-radius: 0px; }
 
 footer {
-  background-color: #fffa19;
+  background-color: #ddd;
   padding: 10px 10px 0 10px;
   margin-top: 10px;
   margin-bottom: 0px; }
